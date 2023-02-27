@@ -8,9 +8,6 @@ namespace es._2
 {
     internal class Program
     {
-        static void confronto(ref DateTime data, ref int []a)
-        {
-        }
         static void Main(string[] args)
         {
             int[] a=new int[12];
@@ -22,11 +19,12 @@ namespace es._2
             {
                 Console.WriteLine("Inserire tariffa mese "+i);
                 a[i]=int.Parse(Console.ReadLine());
-                if(a[i]==data.Month)
+                if(i==data.Month)
                 {
                     Console.WriteLine("La tua tariffa è di: "+a[i]);
                     break;
                 }
+                
             }
         }
     }
